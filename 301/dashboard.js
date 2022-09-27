@@ -7,6 +7,7 @@
 
 async function login() {
   await Moralis.authenticate();
+  checkUser();
 }
 
 async function logout() {
@@ -56,3 +57,13 @@ document.getElementById("transfer-erc20").onclick = transferERC20;
   // eslint-disable-next-line no-unused-vars
 
 })()
+
+function checkUser() {
+  currentUser = Moralis.User.current();
+  if (currentUser) {
+      document.getElementById("login-info").innerText = `Logged in as: ${currentUser.get('username')}`;
+
+  } else {
+      document.getElementById("logged-in-user").innerText = `Not logged in`;
+  }
+}
