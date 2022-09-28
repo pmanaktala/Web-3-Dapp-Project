@@ -1,7 +1,7 @@
 //Moralis Code
 (async function() {
-  const serverUrl = ""
-  const appId = ""
+  const serverUrl = "https://gdj8rkg4b4cz.usemoralis.com:2053/server";
+  const appId = "LOYAMIVCC2ZrKdeKJee3hWzuRuMzIim1lbe9VLd8";
   await Moralis.start({serverUrl, appId})
 })()
 
