@@ -10,3 +10,7 @@ Repository for the Moralis Full Course For Beginners group project
 | 3           | Ashish Simon Harrison       | 
 | 4           | Nikita Katari        | 
 | 5           | Leandro de Almeida        |
+
+## Repository URL
+
+https://github.com/pmanaktala/Web-3-Dapp-Project
