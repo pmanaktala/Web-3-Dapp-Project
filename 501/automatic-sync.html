@@ -85,8 +85,8 @@
 <script>
     // INITIALISATION CODE & MORALIS LOGIN/LOGOUT CODE
 
-    const serverUrl = ""
-    const appId = ""
+    const serverUrl = "https://gdj8rkg4b4cz.usemoralis.com:2053/server";
+    const appId = "LOYAMIVCC2ZrKdeKJee3hWzuRuMzIim1lbe9VLd8";
     Moralis.start({ serverUrl, appId })
 
 
@@ -113,8 +113,10 @@
 
             Moralis.Cloud.run("watchEthAddress", {
             "address":_address.toLowerCase(),
-            "sync_historical":historical
-            });
+            "sync_historical":historical, 
+            useMasterKey:true
+            }, {useMasterKey:true}
+            )
         }
 
         async function destroyAddress(){
